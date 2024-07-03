@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BanHaiSan.ViewModel.EditProVM>
+
+@{
+    var i = 0;
+}
+@foreach (var item in Model)
+{
+    i++;
+    <tr>
+        <td>@item.MaHaiSan</td>
+        <td>@item.TenHaiSan</td>
+        <td>@item.tenLoai</td>
+        <td>@string.Format("{0:#,00}", item.Gia)</td>
+        <td style="display:flex; justify-content:center; align-items: center">
+            <img style="display: block;object-fit: cover;height: 75px;" src="/img/Product/@item.Img" alt="Avatar" class="image">
+        </td>
+        <td>
+            <button class="sua btn btn-success" id="" data-id="@item.MaHaiSan">Sửa</button>
+            @Html.ActionLink("Xóa", "Xoa", new { idpro = item.MaHaiSan }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".sua").click(function () {
+            var id = $(this).data("id");
+            $.ajax({
+                url: "/AddMin/Add",
+                type: "GET",
+                data: { idpro: id },
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+    });
+</script>

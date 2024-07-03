@@ -1,0 +1,118 @@
+﻿    @model IEnumerable<BanHaiSan.ViewModel.EditProVM>
+
+
+<div class="add">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <h2>Danh Sách Hải Sản</h2>
+        </div>
+        <div class="use-info">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm" />
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+
+        <h2>Danh Sách Hải Sản</h2>
+        <div class="card-wrapper">
+            <button class="btn btn-primary" id="but">Thêm Sản Phẩm</button>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <td>Mã</td>
+                        <td>Tên SP</td>
+                        <td>Loại SP</td>
+                        <td>Giá</td>
+                        <td>Hình Ảnh</td>
+                        <td>Chức Năng</td>
+                    </tr>
+                </thead>
+                <tbody class="pro" id="load">
+                    @{
+                        var i = 0;
+                    }
+                    @foreach (var item in Model)
+                    {
+                        i++;
+                        <tr>
+                            <td>@item.MaHaiSan</td>
+                            <td>@item.TenHaiSan</td>
+                            <td>@item.tenLoai</td>
+                            <td>@string.Format("{0:#,00}", item.Gia)</td>
+                            <td style="display:flex; justify-content:center; align-items: center">
+                                <img style="display: block;object-fit: cover;height: 75px;" src="/img/Product/@item.Img" alt="Avatar" class="image">
+                            </td>
+                            <td>
+                                <button class="sua btn btn-success" id="" data-id="@item.MaHaiSan">Sửa</button>
+                                <button type="button" class="btn btn-danger" data-id="@item.MaHaiSan" >Xóa</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <ul class="pagination" style="align-items: center;display: flex;justify-content: center;">
+            @for (int n = 1; n <= ViewBag.CountPages; n++)
+            {
+                <li class="page-item @(n == ViewBag.CurrentPage ? "active" : "")" id="pga">
+                    <a class="page-link" id="page-@n">@n</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".page-link").click(function (e) {
+            e.preventDefault();
+            var pageNumber = $(this).attr("id").split("-")[1]; // Lấy số trang từ thuộc tính id
+            // Xóa class "active" từ tất cả các phần tử có class "page-item"
+            $(".page-item").removeClass("active");
+
+            // Thêm class "active" cho phần tử được nhấp vào
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/AddMin/ShowProV", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                data: { intpage: pageNumber },
+                success: function (datare) {
+                    $(".pro").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $(".sua").click(function () {
+            var id = $(this).data("id");
+            $.ajax({
+                url: "/AddMin/Add",
+                type: "GET",
+                data: { idpro: id },
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $("#but").click(function () {
+            $.ajax({
+                url: "/AddMin/Add",
+                type: "GET",
+                data: {},
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+    });
+</script>

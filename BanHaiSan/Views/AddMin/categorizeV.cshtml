@@ -1,0 +1,38 @@
+﻿@model IEnumerable<BanHaiSan.Models.LoaiHaiSan>
+
+@{
+    var i = 0;
+}
+@foreach (var item in Model)
+{
+    i++;
+    <tr>
+        <td>@item.MaLoai</td>
+        <td>@item.TenLoai</td>
+        <td>
+            <button class="sua btn btn-success" id="" data-id="@item.MaLoai">Sửa</button>
+            <button type="button" class="btn btn-danger" data-id="@item.MaLoai" onclick="deleteProduct(this)">Xóa</button>
+        </td>
+    </tr>
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".sua").click(function () {
+            var id = $(this).data("id");
+            $.ajax({
+                url: "/AddMin/AddCate",
+                type: "GET",
+                data: { idpro: id },
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+    });
+</script>
+

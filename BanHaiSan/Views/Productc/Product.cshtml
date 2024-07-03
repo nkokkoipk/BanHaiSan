@@ -1,0 +1,269 @@
+﻿@* @model X.PagedList.IPagedList<HaiSan>
+@using X.PagedList.Mvc;
+@using X.PagedList.Mvc.Core *@
+@model IEnumerable<BanHaiSan.Models.HaiSan>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<div class="rowpro">
+    <div class="rightcolumn">
+        <div class="card" id="loai">
+            <h2>Loại Hải Sản</h2>
+            <a class="btnla activea" style="border-radius: 0px" id="0">Tất cả</a>
+            <a class="btnla" style="border-radius: 0px" id="1">Cá</a>
+            <a class="btnla" style="border-radius: 0px" id="2">Mực</a>
+            <a class="btnla" style="border-radius: 0px" id="3">Tôm</a>
+            <a class="btnla" style="border-radius: 0px" id="4">Sò</a>
+            <a class="btnla" style="border-radius: 0px" id="5">Ốc</a>
+        </div>
+        <div class="card">
+            <h3>Tất cả sản phẩm</h3>
+
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div>
+        </div>
+        <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+        </div>
+    </div>
+    <div class="leftcolumn">
+        <div class="card">
+            <div class="rowgr">
+                <div class="rightcolumn">
+                    <div class="card" style="height:77px">
+                        <div id="btnContainer">
+                            <button class="btnl" id="listv"><i class="fa fa-bars"></i> List</button>
+                            <button style="float: left" class="btnl active" id="gridv"><i class="fa fa-th-large"></i> Grid</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="leftcolumn">
+                    <div class="card" style="position: relative; display: flex;flex-direction: row-reverse;;height: 77px">
+                        <div style="float: left;left: 51%;position: absolute">
+                            <label for="browser">Sắp xếp:</label>
+                        </div>
+
+                        <select style="width: 40%" id="browers" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected value="0">Chọn Cách Sắp Xếp</option>
+                            <option value="1">Sắp xếp theo tên</option>
+                            <option value="2">Sắp xếp giá tăng dần</option>
+                            <option value="3">Sắp xếp giá giảm dần</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h2>Tất cả sản phẩm</h2>
+
+            <div class="mess">
+                <div class="row row-cols-1 row-cols-md-4" style="justify-content: center;">
+                    @foreach (var item in Model)
+                    {
+                        <div class="card" style="position: relative;">
+                            <div class="containerim">
+                                <img src="/img/Product/@item.Img" alt="Avatar" class="image">
+                                <div class="overlay">
+                                    <div class="overlay-content">
+                                        @* Chức năng nổi lên từ hình *@
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            @* <img src="@(haiSan?.Img)" class="card-img-top" alt="@(haiSan?.TenHaiSan)"> *@
+
+                            <div class="card-body">
+                                <h5 class="card-title">@item.TenHaiSan</h5>
+                                <p class="card-text">@string.Format("{0:#,00}", item.Gia)đ</p>
+                                @Html.ActionLink("Xem Chi Tiết", "shopDetail","Productc", new { id = item.MaHaiSan }, new { @class = "btn btn-primary" })
+                                <a class="btn btn-success" asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHaiSan">
+                                    Thêm Vào Giỏ Hàng
+                                </a>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+                <ul class="pagination" style="align-items: center;display: flex;justify-content: center;">
+                    @for (int n = 1; n <= ViewBag.CountPages; n++)
+                    {
+                        <li class="page-item @(n == ViewBag.CurrentPage ? "active" : "")" id="pga">
+                            <a class="page-link" id="page-@n">@n</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+            @* @Html.PagedListPager(Model,
+            page => Url.Action("Product", "HaiSan", new { page = page }),
+            new PagedListRenderOptions { LiElementClasses = new[] { "custom-class" } }) *@
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+    $(function () {
+        $(".page-link").click(function () {
+            var pageNumber = $(this).attr("id").split("-")[1]; // Lấy số trang từ thuộc tính id
+            // Xóa class "active" từ tất cả các phần tử có class "page-item"
+            $(".page-item").removeClass("active");
+
+            // Thêm class "active" cho phần tử được nhấp vào
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/Productc/ListProduct", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                data: { intpage: pageNumber },
+                success: function (datare) {
+                    $(".mess").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $('#gridv').click(function () {
+            $.ajax({
+                url: "/Productc/ListProduct", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                success: function (datare) {
+                    $(".mess").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $('#listv').click(function () {
+            $.ajax({
+                url: "/Productc/Listv", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                success: function (datare) {
+                    $(".mess").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $(".btnla").click(function () {
+
+            var loai = $(this).attr("id").valueOf();
+            $.ajax({
+                url: "/Productc/ListProductByCategory",
+                type: "GET",
+                data: { idcategory: loai },
+                success: function (datare) {
+                    $(".mess").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $("#browers").change(function () {
+            var selectedValue = $(this).val(); // Lấy giá trị của option đã chọn
+            // Gửi yêu cầu Ajax đến action SortProducts trong ProductController
+            $.ajax({
+                url: "/Productc/SortProducts",
+                type: "GET",
+                data: { sortOrder: selectedValue },
+                success: function (result) {
+                    // Cập nhật phần giao diện với dữ liệu mới
+                    $(".mess").html(result);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        });
+    });
+
+
+
+
+    document.getElementById("browers").onchange = function () {
+        // Lấy giá trị của option đã chọn
+        var selectedValue = this.value;
+
+        // Thực hiện sắp xếp dữ liệu dựa trên giá trị của option
+        switch (selectedValue) {
+            case "1":
+                // Sắp xếp theo tên
+                // Thực hiện mã sắp xếp theo tên ở đây
+                console.log("Sắp xếp theo tên");
+                break;
+            case "2":
+                // Sắp xếp giá tăng dần
+                // Thực hiện mã sắp xếp giá tăng dần ở đây
+                console.log("Sắp xếp giá tăng dần");
+                break;
+            case "3":
+                // Sắp xếp giá giảm dần
+                // Thực hiện mã sắp xếp giá giảm dần ở đây
+                console.log("Sắp xếp giá giảm dần");
+                break;
+            default:
+                // Mặc định không làm gì cả
+                break;
+        }
+    };
+
+
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a loop variable
+    var i;
+
+    // List View
+    function listView() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "100%";
+        }
+    }
+
+    // Grid View
+    function gridView() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "50%";
+        }
+    }
+
+    /* Optional: Add active class to the current button (highlight it) */
+    var container = document.getElementById("btnContainer");
+    var btns = container.getElementsByClassName("btnl");
+
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current1 = document.getElementsByClassName("active");
+            current1[0].className = current1[0].className.replace(" active", "");
+            // Xóa class "active" từ tất cả các phần tử có class "page-item"
+            $(".btnl").removeClass("active");
+
+            // Thêm class "active" cho phần tử được nhấp vào
+            this.className += " active";
+        });
+    }
+
+    var href = document.getElementById("loai");
+    var btna = href.getElementsByClassName("btnla");
+    for (var i = 0; i < btna.length; i++) {
+        btna[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("activea");
+            current[0].className = current[0].className.replace(" activea", "");
+            this.className += " activea";
+        });
+    }
+
+
+
+</script>

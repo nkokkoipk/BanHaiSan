@@ -1,0 +1,63 @@
+﻿@model IEnumerable<BanHaiSan.Models.HaiSan>
+
+
+<div class="row row-cols-1 row-cols-md-4" style="justify-content: center;">
+    @foreach (var item in Model)
+    {
+        <div class="card" style="position: relative;">
+            <div class="containerim">
+                <img src="/img/Product/@item.Img" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <p>gio hang</p>
+                    </div>
+                </div>
+            </div>
+            @* <img src="@(haiSan?.Img)" class="card-img-top" alt="@(haiSan?.TenHaiSan)"> *@
+
+            <div class="card-body">
+                <h5 class="card-title">@item.TenHaiSan</h5>
+                <p class="card-text">@string.Format("{0:#,00}", item.Gia)đ</p>
+                @Html.ActionLink("Xem Chi Tiết", "shopDetail", new { id = item.MaHaiSan }, new { @class = "btn btn-primary" })
+                <a class="btn btn-success" asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHaiSan">
+                    Thêm Vào Giỏ Hàng
+                </a>
+            </div>
+        </div>
+
+    }
+</div>
+<ul class="pagination" style="align-items: center;display: flex;justify-content: center;">
+    @for (int n = 1; n <= ViewBag.CountPages; n++)
+    {
+        <li class="page-item @(n == ViewBag.CurrentPage ? "active" : "")" id="pga">
+            <a class="page-link" id="page-@n">@n</a>
+        </li>
+    }
+</ul>
+
+
+
+<script>
+    $(function () {
+        $(".page-link").click(function () {
+            var pageNumber = $(this).attr("id").split("-")[1]; // Lấy số trang từ thuộc tính id
+            // Xóa class "active" từ tất cả các phần tử có class "page-item"
+            $(".page-item").removeClass("active");
+
+            // Thêm class "active" cho phần tử được nhấp vào
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/Productc/ListProduct", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                data: { intpage: pageNumber },
+                success: function (datare) {
+                    $(".mess").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+    });
+</script>

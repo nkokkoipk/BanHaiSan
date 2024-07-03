@@ -1,0 +1,365 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BanHaiSan.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BanHaiSan.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\Login\\style.css",
+      "PackagePath": "staticwebassets\\css\\Login\\style.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\addmin\\addmin.css",
+      "PackagePath": "staticwebassets\\css\\addmin\\addmin.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\About\\TaoGioHang.rar",
+      "PackagePath": "staticwebassets\\img\\About\\TaoGioHang.rar"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\About\\abcahoi.jpg",
+      "PackagePath": "staticwebassets\\img\\About\\abcahoi.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\About\\abtom.jpg",
+      "PackagePath": "staticwebassets\\img\\About\\abtom.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Login\\Login.jpg",
+      "PackagePath": "staticwebassets\\img\\Login\\Login.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\NoImage.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\NoImage.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\Screenshot 2024-04-24 200534.png",
+      "PackagePath": "staticwebassets\\img\\Product\\Screenshot 2024-04-24 200534.png"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\cabasa.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\cabasa.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\caduoi.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\caduoi.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\cahoi.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\cahoi.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\mucong.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\mucong.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\oclen.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\oclen.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\sodiep.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\sodiep.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\Product\\tomsu.jpg",
+      "PackagePath": "staticwebassets\\img\\Product\\tomsu.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\TrangChu\\BieuTuong.jpg",
+      "PackagePath": "staticwebassets\\img\\TrangChu\\BieuTuong.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\TrangChu\\crab.jpg",
+      "PackagePath": "staticwebassets\\img\\TrangChu\\crab.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\TrangChu\\shrimp.jpg",
+      "PackagePath": "staticwebassets\\img\\TrangChu\\shrimp.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\TrangChu\\ta1.jpg",
+      "PackagePath": "staticwebassets\\img\\TrangChu\\ta1.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\TrangChu\\tomhumhome.webp",
+      "PackagePath": "staticwebassets\\img\\TrangChu\\tomhumhome.webp"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\img\\TrangChu\\tomnuochome.jpg",
+      "PackagePath": "staticwebassets\\img\\TrangChu\\tomnuochome.jpg"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\js\\Scrip.js",
+      "PackagePath": "staticwebassets\\js\\Scrip.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BanHaiSan.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BanHaiSan.props",
+      "PackagePath": "build\\BanHaiSan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BanHaiSan.props",
+      "PackagePath": "buildMultiTargeting\\BanHaiSan.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BanHaiSan.props",
+      "PackagePath": "buildTransitive\\BanHaiSan.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,46 @@
+﻿@model BanHaiSan.ViewModel.NCCVM
+@{
+    ViewBag.Title = "index";
+}
+
+<div class="header-wrapper">
+    <div class="header-title">
+        <h2>Thêm Loại Hải Sản</h2>
+    </div>
+    <div class="use-info">
+    </div>
+</div>
+<div class="card-container">
+
+    <div style="text-align: left">
+        <form enctype="multipart/form-data">
+        </form>
+        @using (Html.BeginForm("SaveNCC", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.MaNcc)</label>
+                @Html.TextBoxFor(x => x.MaNcc, new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(x => x.MaNcc, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.TenNcc)</label>
+                @Html.TextBoxFor(x => x.TenNcc, new { @class = "form-control", @required = "required" })
+                @Html.ValidationMessageFor(x => x.TenNcc, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.DiaChi)</label>
+                @Html.TextBoxFor(x => x.DiaChi, new { @class = "form-control", @required = "required" })
+                @Html.ValidationMessageFor(x => x.DiaChi, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.Sdt)</label>
+                @Html.TextBoxFor(x => x.Sdt, new { @class = "form-control", @required = "required" })
+                @Html.ValidationMessageFor(x => x.Sdt, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-success" />
+            </div>
+
+        }
+    </div>
+</div>

@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|d:\\testweb\\webbanhaisan\\banhaisan\\banhaisan\\controllers\\productccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|solutionrelative:banhaisan\\controllers\\productccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|d:\\testweb\\webbanhaisan\\banhaisan\\banhaisan\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|solutionrelative:banhaisan\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|d:\\testweb\\webbanhaisan\\banhaisan\\banhaisan\\views\\login\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|solutionrelative:banhaisan\\views\\login\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|d:\\testweb\\webbanhaisan\\banhaisan\\banhaisan\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|solutionrelative:banhaisan\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|d:\\testweb\\webbanhaisan\\banhaisan\\banhaisan\\viewmodel\\createus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|solutionrelative:banhaisan\\viewmodel\\createus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|d:\\testweb\\webbanhaisan\\banhaisan\\banhaisan\\wwwroot\\css\\login\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ACEB5EED-66B7-4B2F-834C-EB78197B544B}|BanHaiSan\\BanHaiSan.csproj|solutionrelative:banhaisan\\wwwroot\\css\\login\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductcController.cs",
+              "DocumentMoniker": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Controllers\\ProductcController.cs",
+              "RelativeDocumentMoniker": "BanHaiSan\\Controllers\\ProductcController.cs",
+              "ToolTip": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Controllers\\ProductcController.cs",
+              "RelativeToolTip": "BanHaiSan\\Controllers\\ProductcController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T09:36:48.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "createUS.cs",
+              "DocumentMoniker": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\ViewModel\\createUS.cs",
+              "RelativeDocumentMoniker": "BanHaiSan\\ViewModel\\createUS.cs",
+              "ToolTip": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\ViewModel\\createUS.cs",
+              "RelativeToolTip": "BanHaiSan\\ViewModel\\createUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T08:43:13.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Views\\Login\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "BanHaiSan\\Views\\Login\\CreateUser.cshtml",
+              "ToolTip": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Views\\Login\\CreateUser.cshtml",
+              "RelativeToolTip": "BanHaiSan\\Views\\Login\\CreateUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T07:37:05.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "BanHaiSan\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "BanHaiSan\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T07:34:07.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "BanHaiSan\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "BanHaiSan\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA3wCIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T06:56:01.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\Login\\style.css",
+              "RelativeDocumentMoniker": "BanHaiSan\\wwwroot\\css\\Login\\style.css",
+              "ToolTip": "D:\\TestWeb\\WebBanHaiSan\\BanHaiSan\\BanHaiSan\\wwwroot\\css\\Login\\style.css",
+              "RelativeToolTip": "BanHaiSan\\wwwroot\\css\\Login\\style.css",
+              "ViewState": "AQIAADYAAAAAAAAAAAAcwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-09T07:33:46.776Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

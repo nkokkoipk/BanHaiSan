@@ -1,0 +1,59 @@
+﻿@model IEnumerable<BanHaiSan.Models.HaiSan>
+
+
+
+
+
+<div class="container">
+    <h1 class="text-center">Product Catalog</h1>
+    <div class="row row-cols-1 row-cols-md-5" style="justify-content: center;">
+        @if (Model != null)
+        {
+            foreach (var haiSan in Model)
+            {
+                <div class="card" style="position: relative;">
+                    <div class="containerim">
+                        <img src="/img/Product/@(haiSan?.Img)" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <p>gio hang</p>
+                            </div>
+                        </div>
+                    </div>
+                    @* <img src="@(haiSan?.Img)" class="card-img-top" alt="@(haiSan?.TenHaiSan)"> *@
+
+                    <div class="card-body">
+                        <h5 class="card-title">@(haiSan?.TenHaiSan)</h5>
+                        <p class="card-text">@(haiSan?.MoTa)</p>
+                        <p class="card-text">Giá: @(haiSan?.Gia)</p>
+                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Danh sách hải sản trống.</p>
+        }
+    </div>
+
+
+</div>
+
+
+<ul class="pagination ">
+    @{
+        for (int n = 0; n < ViewBag.CountPages; n++)
+        {
+            int page1 = n + 1;
+            if (ViewBag.CountPages == page1)
+            {
+                <li class="page-item"><a class="page-link">@page1</a></li>
+            }
+            else
+            {
+                <li class="page-item"><a class="page-link">@page1</a></li>
+            }
+        }
+    }
+</ul>

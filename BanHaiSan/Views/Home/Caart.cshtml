@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ChiTietDonHang>
+<h1>Giỏ hàng</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaHaiSan</td>
+                <td>@item.SoLuong</td>
+                <td>@item.DonGia</td>
+                <td>@item.ThanhTien</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (Model.Any())
+{
+    var tongTien = Model.Sum(item => item.ThanhTien ?? 0);
+    <p>Tổng tiền: @tongTien</p>
+}
+
+<form method="post" action="/Purchase">
+    <input type="hidden" name="maDonHang" value="" />
+    <button type="submit" class="btn btn-success">Mua hàng</button>
+</form>
+
+<!-- Add your additional HTML content here -->

@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model X.PagedList.IPagedList<HaiSan>
+@using X.PagedList.Mvc;
+@using X.PagedList.Mvc.Core
+
+<div class="slideshow-container">
+    <!-- Ảnh -->
+    <div class="slide ">
+        <img src="img/TrangChu/ta1.jpg" alt="Ảnh 1">
+    </div>
+    <div class="slide ">
+        <img src="img/TrangChu/crab.jpg" alt="Ảnh 2">
+    </div>
+    <div class="slide ">
+        <img src="img/TrangChu/shrimp.jpg" alt="Ảnh 3">
+    </div>
+
+    <!-- Nút điều khiển -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- Chấm điều hướng -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<div class="container">
+    <h1 class="text-center">Product Catalog</h1>
+    <div class="row row-cols-1 row-cols-md-5" style="justify-content: center;">
+        @if (Model != null)
+        {
+            foreach (var haiSan in Model)
+            {
+                <div class="card" style="position: relative;">
+                    <div class="containerim">
+                        <img src="/img/Product/@(haiSan?.Img)" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <p>gio hang</p>
+                            </div>
+                        </div>
+                    </div>
+                    @* <img src="@(haiSan?.Img)" class="card-img-top" alt="@(haiSan?.TenHaiSan)"> *@
+
+                    <div class="card-body">
+                        <h5 class="card-title">@(haiSan?.TenHaiSan)</h5>
+                        <p class="card-text">@(haiSan?.MoTa)</p>
+                        <p class="card-text">Giá:@string.Format("{0:#,00}", haiSan?.Gia)đ</p>
+                        @Html.ActionLink("Xem Chi Tiết", "shopDetail", "Product", new { id = haiSan.MaHaiSan }, new { @class = "btn btn-primary" })
+                        <a class="btn btn-success" asp-action="AddToCart" asp-controller="Cart" asp-route-id="@haiSan.MaHaiSan">
+                            Thêm Vào Giỏ Hàng
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>Danh sách hải sản trống.</p>
+        }
+    </div>
+
+    @* @{
+    int totalItems = Model.Count(); // Đếm tổng số mục
+    }
+
+
+
+    @{
+    int pageSize = 3; // Kích thước trang
+    int totalPages = (int)Math.Ceiling((double)totalItems / 3);
+    <div>@totalPages</div>
+    }
+
+
+    @if (totalPages > 1)
+    {
+    <nav aria-label="...">
+    <ul class="pagination">
+    <li class="page-item disabled">
+    <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    @for (int i = 1; i <= totalPages; i++)
+    {
+
+    <li class="page-item">
+    <a class="page-link" href="@Url.Action("Index", "haiSan", new { page = i })">@i</a>
+    </li>
+    }
+    <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+    </li>
+    </ul>
+    </nav>
+    }
+    *@
+    @Html.PagedListPager(Model,
+            page => Url.Action("Index", "Home", new { page = page }),
+            new PagedListRenderOptions { LiElementClasses = new[] { "custom-class" }, })
+
+
+</div>
+
+
+
+<div class="row row-cols-1 row-cols-md-5" style="justify-content: center;">
+    <div class="card" style="position: relative;">
+        <div class="containerim">
+            <img src="/img/TrangChu/tomhumhome.webp" alt="Avatar" class="image">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title"><a href="#">Hải Sản Nhập Khẩu</a></h5>
+        </div>
+    </div>
+    <div class="card" style="position: relative;">
+        <div class="containerim">
+            <img src="/img/TrangChu/tomnuochome.jpg" alt="Avatar" class="image">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title"><a href="#">Hải Sản Trong Nước</a></h5>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-...YOUR_SHA384_HASH_HERE..." crossorigin="anonymous"></script>
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active-dot";
+        setTimeout(showSlides, 3000); // Thay đổi hình ảnh mỗi 2 giây
+    }
+
+    function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+    }
+
+    function changeSlide(n) {
+        slideIndex += n;
+        showSlides();
+    }
+
+
+
+</script>
+

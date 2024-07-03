@@ -1,0 +1,41 @@
+﻿@model BanHaiSan.Models.HaiSan
+
+
+
+<form enctype="multipart/form-data">
+</form>
+@using (Html.BeginForm("Save", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(x => x.MaHaiSan)
+    <div class="form-group">
+        <label>@Html.LabelFor(x => x.TenHaiSan)</label>
+        @Html.TextBoxFor(x => x.TenHaiSan, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.TenHaiSan, null, new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        <label>@Html.LabelFor(x => x.Gia)</label>
+        @Html.TextBoxFor(x => x.Gia, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>@Html.LabelFor(x => x.MaLoai)</label>
+        @Html.DropDownList("IdCategory", new SelectList(ViewBag.ListCate, "IdCategory", "NameCategory"), new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>@Html.LabelFor(x => x.MoTa)</label>
+        @Html.TextBoxFor(x => x.MoTa, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>@Html.LabelFor(x => x.MaNcc)</label>
+        @Html.TextBoxFor(x => x.MaNcc, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Hình ảnh</label>
+        <input type="file" name="FilePro" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Lưu" class="btn btn-success" />
+    </div>
+
+}

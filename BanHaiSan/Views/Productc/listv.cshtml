@@ -1,0 +1,60 @@
+﻿@model IEnumerable<BanHaiSan.Models.HaiSan>
+
+
+<table>
+    <tr>
+        <th>Tên Sản Phẩm</th>
+        <th>Giá</th>
+        <th>Hình Ảnh</th>
+        <th>Menu</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TenHaiSan</td>
+            <td>@item.Gia</td>
+            <td>
+                <img style="display: block;object-fit: cover;height: 75px;" src="/img/Product/@item.Img" alt="Avatar" class="image">
+            </td>
+            <td>
+                @Html.ActionLink("Xem Chi Tiết", "shopDetail", new { id = item.MaHaiSan }, new { @class = "btn btn-primary" })
+                <a class="btn btn-success" asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHaiSan">
+                    Thêm Vào Giỏ Hàng
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<ul class="pagination" style="align-items: center;display: flex;justify-content: center;">
+    @for (int n = 1; n <= ViewBag.CountPages; n++)
+    {
+        <li class="page-item @(n == ViewBag.CurrentPage ? "active" : "")" id="pga">
+            <a class="page-link" id="page-@n">@n</a>
+        </li>
+    }
+</ul>
+
+<script>
+    $(function () {
+        $(".page-link").click(function () {
+            var pageNumber = $(this).attr("id").split("-")[1]; // Lấy số trang từ thuộc tính id
+            // Xóa class "active" từ tất cả các phần tử có class "page-item"
+            $(".page-item").removeClass("active");
+
+            // Thêm class "active" cho phần tử được nhấp vào
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/Productc/Listv", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                data: { intpage: pageNumber },
+                success: function (datare) {
+                    $(".mess").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+    });
+</script>

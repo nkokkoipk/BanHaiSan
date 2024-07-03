@@ -1,0 +1,195 @@
+﻿@model HaiSan
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Single Product Start -->
+<div class="container-fluid py-5 mt-5">
+    <div class="container py-5">
+        <div class="row g-4 mb-5">
+            <div class="col-lg-8 col-xl-9">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="border rounded">
+                            <a href="#">
+                                <img src="/img/Product/@Model.Img" class="img-fluid rounded" alt="Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="fw-bold mb-3">@Model.TenHaiSan</h4>
+                        <p class="mb-3">@Model.MaNccNavigation.TenNcc</p>
+                        <h5 class="fw-bold mb-3">@string.Format("{0:#,00}", Model.Gia)đ</h5>
+                        <div class="d-flex mb-4">
+                        </div>
+                        <p class="mb-4">@Model.MoTa</p>
+                        <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.MaHaiSan">
+                            <p class="mb-4">
+                                <div class="product-count" style="display: flex">
+                                    <label for="size">Số Lượng</label>
+                                    <div class="qtyminus" id="qtyminuss">-</div>
+                                    <input type="text" name="quantity" value="1" class="qty" id="qtys">
+                                    <div class="qtyplus" id="qtypluss">+</div>
+                                </div>
+                            </p>
+
+                            <button class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Mua hàng</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-12">
+                        <nav>
+                            <div class="nav nav-tabs mb-3">
+                                <button class="nav-link active border-white border-bottom-0" type="button" role="tab"
+                                        id="nav-about-tab" data-bs-toggle="tab" data-bs-target="#nav-about"
+                                        aria-controls="nav-about" aria-selected="true">
+                                    Chi Tiết
+                                </button>
+                                <button class="nav-link border-white border-bottom-0" type="button" role="tab"
+                                        id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission"
+                                        aria-controls="nav-mission" aria-selected="false">
+                                    Reviews
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content mb-5">
+                            <div class="tab-pane active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                                <p>
+                                    Trống
+                                </p>
+                                <p>
+                                    Trống
+                                </p>
+                                <div class="px-2">
+                                    <div class="row g-4">
+                                        <div class="col-6">
+                                            <div class="row bg-light align-items-center text-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Cân Nặng Trung Bình</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">@Model.CanNangTB</p>
+                                                </div>
+                                            </div>
+                                            <div class="row text-center align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Tên Nhà Cung Cấp:</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">@Model.MaNccNavigation.TenNcc</p>
+                                                </div>
+                                            </div>
+                                            <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Chất Lượng:</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">@Model.ChatLuong</p>
+                                                </div>
+                                            </div>
+                                            <div class="row bg-light text-center align-items-center justify-content-center py-2">
+                                                <div class="col-6">
+                                                    <p class="mb-0">Trọng Lượng Tối Thiểu:</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="mb-0">@Model.CanNangMin</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                                <h1>@Model.Review</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <h4 class="mb-5 fw-bold">Đánh Giá</h4>
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="border-bottom rounded">
+                                    <input type="text" class="form-control border-0 me-4" placeholder="Tên Khách Hàng *">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="border-bottom rounded">
+                                    <input type="email" class="form-control border-0" placeholder="Email *">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="border-bottom rounded my-4">
+                                    <textarea name="" id="" class="form-control border-0" cols="30" rows="8" placeholder="Lời Đánh Giá *" spellcheck="false"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="d-flex justify-content-between py-3 mb-5">
+                                    <a href="#" class="btn border border-secondary text-primary rounded-pill px-4 py-3"> Gửi Đánh Giá</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3">
+                <div class="row g-4 fruite">
+                    <div class="col-lg-12">
+                    </div>
+                    <div class="col-lg-12">
+                        <h4 class="mb-4">Sản Phẩm Bán Chạy</h4>
+                        <div id="load"></div>
+                        <div class="d-flex justify-content-center my-4">
+                            <a class="btn btn-success" asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.MaHaiSan">
+                                Thêm Vào Giỏ Hàng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Single Product End -->
+
+
+<script>
+    $(function () {
+        $("#qtyminuss").click(function () {
+            console.log("r ne");
+            var now = $("#qtys").val();
+            console.log(now);
+            if ($.isNumeric(now)) {
+                if (parseInt(now) - 1 > 0) { now--; }
+                $("#qtys").val(now);
+            }
+        })
+        $("#qtypluss").click(function () {
+            console.log("r ne");
+            var now = $("#qtys").val();
+            console.log(now);
+            if ($.isNumeric(now)) {
+                $("#qtys").val(parseInt(now) + 1);
+            }
+        })
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Đặt mã AJAX tại đây
+        $.ajax({
+            url: "/Productc/onload",
+            type: "GET",
+            beforeSend: function () {
+                console.log("Đã gửi yêu cầu AJAX.");
+            },
+            success: function (datare) {
+                console.log("Nhận dữ liệu thành công.");
+                document.getElementById("load").innerHTML = datare;
+            },
+            error: function (xhr, status, error) {
+                console.error("Lỗi khi gửi yêu cầu AJAX:", status, error);
+            },
+            complete: function () {
+                document.getElementById("load").innerHTML = datare;
+                console.log("Yêu cầu AJAX đã hoàn thành.");
+            }
+        });
+    });
+</script>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<BanHaiSan.Models.HaiSan>
+
+@foreach (var haiSan in Model)
+{
+    <div class="d-flex align-items-center justify-content-start">
+        <div class="rounded" style="width: 119px; height: 114px;">
+            <img src="/img/Product/@haiSan.Img" class="img-fluid rounded" alt="Image">
+        </div>
+        <div>
+            <h6 class="mb-2">@haiSan.TenHaiSan</h6>
+            <div class="d-flex mb-2">
+                <h5 class="fw-bold me-2">@string.Format("{0:#,00}", haiSan.Gia)đ</h5>
+
+            </div>
+            <div class="d-flex mb-2" style="position:relative; top: -13px; height: 41px">
+                @Html.ActionLink("Xem Chi Tiết", "shopDetail", "Productc", new { id = haiSan.MaHaiSan }, new { @class = "btn border border-secondary px-4 py-3 rounded-pill text-primary w-100", style = "display: flex; align-items: center;" })
+
+            </div>
+        </div>
+    </div>
+}

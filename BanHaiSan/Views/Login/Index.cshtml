@@ -1,0 +1,49 @@
+﻿@model BanHaiSan.ViewModel.UsersVM
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form in HTML and CSS | Codehal</title>
+    <link href="~/css/login/style.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>LOGIN</h1>
+        <form asp-controller="Login" asp-action="Authenticate" method="post">
+            <input type="text" asp-for="tentaikhoan" placeholder="Tên Đăng Nhập">
+            <input type="password" asp-for="matkhau" id="password1" placeholder="Mật Khẩu">
+            <div class="terms">
+                <input type="checkbox" name="" id="showPassword" onchange="togglePassword()">
+                <label for="showPassword">I agree</label>
+            </div>
+            <button>Đăng Nhập</button>
+        </form>
+        
+        
+        <div class="member">
+            Bạn chưa có tài khoản?
+            <a href="/Login/CreateUser">Đăng Kí</a>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function togglePassword() {
+        var passwordField = document.getElementById("password1");
+        var checkbox = document.getElementById("showPassword");
+
+        if (checkbox.checked) {
+            passwordField.type = "text";
+        } else {
+            passwordField.type = "password";
+        }
+    }
+</script>
+</html>

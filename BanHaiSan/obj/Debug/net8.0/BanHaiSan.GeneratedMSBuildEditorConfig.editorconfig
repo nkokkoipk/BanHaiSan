@@ -1,0 +1,167 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BanHaiSan
+build_property.RootNamespace = BanHaiSan
+build_property.ProjectDir = D:\TestWeb\WebBanHaiSan\BanHaiSan\BanHaiSan\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\TestWeb\WebBanHaiSan\BanHaiSan\BanHaiSan
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/AddCate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXEFkZENhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/AddNCC.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXEFkZE5DQy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/categorize.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXGNhdGVnb3JpemUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/categorizeV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXGNhdGVnb3JpemVWLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/NhaCungCap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXE5oYUN1bmdDYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/NhaCungCapV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXE5oYUN1bmdDYXBWLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/ShowPro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXFNob3dQcm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/ShowProV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXFNob3dQcm9WLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/TaiKhoans.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXFRhaUtob2Fucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/AddMin/UpDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkTWluXFVwRGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Home/Caart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Home/phantrang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwaGFudHJhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Login/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ3JlYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Login/LoginFailed.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW5GYWlsZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/ListProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcTGlzdFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/ListProductByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcTGlzdFByb2R1Y3RCeUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/listv.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcbGlzdHYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/onload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcb25sb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/PhanTrang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcUGhhblRyYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/shopDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcc2hvcERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Productc/SortProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdGNcU29ydFByb2R1Y3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Shared/Components/Cart/CartPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0UGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/TestWeb/WebBanHaiSan/BanHaiSan/BanHaiSan/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nctcdl63ls

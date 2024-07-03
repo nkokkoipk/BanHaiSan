@@ -1,0 +1,68 @@
+﻿@model IEnumerable<BanHaiSan.Models.NhaCungCap>
+
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.MaNcc</td>
+        <td>@item.TenNcc</td>
+        <td>@item.DiaChi</td>
+        <td>@item.Sdt</td>
+        <td>
+            <button class="sua btn btn-success" id="" data-id="@item.MaNcc">Sửa</button>
+            <button type="button" class="btn btn-danger" data-id="@item.MaNcc" onclick="deleteProduct(this)">Xóa</button>
+        </td>
+    </tr>
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".page-link").click(function (e) {
+            e.preventDefault();
+            var pageNumber = $(this).attr("id").split("-")[1]; // Lấy số trang từ thuộc tính id
+            // Xóa class "active" từ tất cả các phần tử có class "page-item"
+            $(".page-item").removeClass("active");
+
+            // Thêm class "active" cho phần tử được nhấp vào
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/AddMin/NhaCungCapV", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                data: { intpage: pageNumber },
+                success: function (datare) {
+                    $(".pro").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $(".sua").click(function () {
+            var id = $(this).data("id");
+            $.ajax({
+                url: "/AddMin/AddNCC",
+                type: "GET",
+                data: { idpro: id },
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $("#but").click(function () {
+            $.ajax({
+                url: "/AddMin/AddNCC",
+                type: "GET",
+                data: {},
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+    });
+</script>

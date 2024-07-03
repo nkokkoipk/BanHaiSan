@@ -1,0 +1,129 @@
+﻿@model IEnumerable<BanHaiSan.Models.LoaiHaiSan>
+
+
+<div class="add">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <h2>Danh Sách Loại Hải Sản</h2>
+        </div>
+        <div class="use-info">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm" />
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+
+        <h2>Danh Sách Hải Sản</h2>
+        <div class="card-wrapper">
+            <button class="btn btn-primary" id="but">Thêm Loại</button>
+            <table class="table table-bordered" id="myTable">
+
+                <thead>
+                    <tr>
+                        <td>Mã</td>
+                        <td>Tên Loại</td>
+                        <td>Chức Năng</td>
+                    </tr>
+                </thead>
+                <tbody class="pro" id="load">
+                    @{
+                        var i = 0;
+                    }
+                    @foreach (var item in Model)
+                    {
+                        i++;
+                        <tr>
+                            <td>@item.MaLoai</td>
+                            <td>@item.TenLoai</td>
+                            <td>
+                                <button class="sua btn btn-success" id="" data-id="@item.MaLoai">Sửa</button>
+                                <button type="button" class="btn btn-danger" data-id="@item.MaLoai" onclick="deleteProduct(this)">Xóa</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <ul class="pagination" style="align-items: center;display: flex;justify-content: center;">
+            @for (int n = 1; n <= ViewBag.CountPages; n++)
+            {
+                <li class="page-item @(n == ViewBag.CurrentPage ? "active" : "")" id="pga">
+                    <a class="page-link" id="page-@n">@n</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".page-link").click(function (e) {
+            e.preventDefault();
+            var pageNumber = $(this).attr("id").split("-")[1]; // Lấy số trang từ thuộc tính id
+            // Xóa class "active" từ tất cả các phần tử có class "page-item"
+            $(".page-item").removeClass("active");
+
+            // Thêm class "active" cho phần tử được nhấp vào
+            $(this).parent().addClass("active");
+            $.ajax({
+                url: "/AddMin/categorizeV", // Sử dụng giá trị href là URL cho request AJAX
+                type: "GET",
+                data: { intpage: pageNumber },
+                success: function (datare) {
+                    $(".pro").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $(".sua").click(function () {
+            var id = $(this).data("id");
+            $.ajax({
+                url: "/AddMin/AddCate",
+                type: "GET",
+                data: { idpro: id },
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+        $("#but").click(function () {
+            $.ajax({
+                url: "/AddMin/AddCate",
+                type: "GET",
+                data: {},
+                success: function (datare) {
+                    $(".add").html(datare);
+                },
+                error: function () {
+                    // Xử lý lỗi nếu có
+                }
+            });
+        })
+    });
+    function deleteProduct(button) {
+        var productId = $(button).data("id");
+        $(".page-item").removeClass("active");
+        // Gửi yêu cầu xóa đến action "Xoa" trong controller "AddMin" bằng AJAX
+        $.ajax({
+            url: "/AddMin/XoaCate",
+            type: 'POST', // hoặc 'GET' nếu action "Xoa" chấp nhận yêu cầu GET
+            data: { idpro: productId },
+            success: function (response) {
+                // Xử lý phản hồi từ server nếu cần thiết
+                console.log(response);
+                $(".pro").html(response);
+            },
+            error: function (xhr, status, error) {
+                // Xử lý lỗi nếu có
+            }
+        });
+    }
+</script>

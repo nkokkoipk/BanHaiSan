@@ -1,0 +1,82 @@
+﻿@model BanHaiSan.ViewModel.EditProVM
+@{
+    ViewBag.Title = "index";
+}
+
+<div class="header-wrapper">
+    <div class="header-title">
+        <h2>Thêm Hải Sản</h2>
+    </div>
+    <div class="use-info">
+    </div>
+</div>
+<div class="card-container">
+
+    @{
+        var itemsn = new List<SelectListItem>
+    {
+    new SelectListItem { Value = "NhapKhau", Text = "Nhập khẩu" },
+    new SelectListItem { Value = "TrongNuoc", Text = "Trong nước" }
+    };
+        var itemscl = new List<SelectListItem>
+    {
+    new SelectListItem { Value = "TuDong", Text = "Tủ Đông" },
+    new SelectListItem { Value = "TuoiSong", Text = "Tươi Sống" }
+    };
+    }
+    <div style="text-align: left">
+        <form enctype="multipart/form-data">
+        </form>
+        @using (Html.BeginForm("Save", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.HiddenFor(x => x.MaHaiSan)
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.TenHaiSan)</label>
+                @Html.TextBoxFor(x => x.TenHaiSan, new { @class = "form-control" })
+                @Html.ValidationMessageFor(x => x.TenHaiSan, null, new { @class = "text-danger" })
+            </div>
+
+
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.Nguon)</label>
+                @Html.DropDownList("Nguon", itemsn, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.MaNcc)</label>
+                @Html.DropDownList("MaNcc", new SelectList(ViewBag.listCC, "MaNcc", "TenNcc"), new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.MoTa)</label>
+                @Html.TextBoxFor(x => x.MoTa, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.Gia)</label>
+                @Html.TextBoxFor(x => x.Gia, new { @class = "form-control", type = "number" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.CanNangTB)</label>
+                @Html.TextBoxFor(x => x.CanNangTB, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.CanNangMin)</label>
+                @Html.TextBoxFor(x => x.CanNangMin, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.ChatLuong)</label>
+                @Html.DropDownList("ChatLuong", itemscl, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label>@Html.LabelFor(x => x.MaLoai)</label>
+                @Html.DropDownList("MaLoai", new SelectList(ViewBag.ListCate, "MaLoai", "TenLoai"), new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="imageFile">Hình ảnh:</label>
+                <input type="file" id="imageFile" name="Img" class="form-control-file" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-success" />
+            </div>
+
+        }
+    </div>
+</div>
